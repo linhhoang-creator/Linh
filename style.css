@@ -1,0 +1,148 @@
+/* 1. Cai dat chung */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    color: #243247;
+    background: #f4f7fb;
+}
+
+/* 2. Phan dau trang */
+header {
+    padding: 85px 20px 75px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #102b4e, #1769aa);
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+header p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #e0edff;
+    font-size: 1.1rem;
+}
+
+/* 3. Thanh dieu huong */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px;
+    background: white;
+    border-bottom: 1px solid #e5eaf1;
+    box-shadow: 0 4px 18px rgba(25, 50, 80, 0.05);
+}
+
+nav a {
+    padding: 8px 16px;
+    color: #1769aa;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    color: white;
+    background: #1769aa;
+}
+
+/* 4. Noi dung chinh */
+main {
+    width: min(900px, calc(100% - 40px));
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 24px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e8edf4;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(30, 55, 90, 0.05);
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #124b7d;
+    font-size: 1.55rem;
+}
+
+section p {
+    margin-bottom: 0;
+}
+
+section ul {
+    padding-left: 22px;
+}
+
+section li {
+    margin: 8px 0;
+    padding-left: 4px;
+}
+
+/* 5. Chan trang */
+footer {
+    padding: 24px 16px;
+    text-align: center;
+    color: #dbe7f5;
+    background: #102b4e;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 6. Toi uu cho dien thoai */
+@media (max-width: 600px) {
+    header {
+        padding: 58px 20px 50px;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav {
+        gap: 4px;
+        padding: 10px 8px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.92rem;
+    }
+
+    main {
+        width: calc(100% - 24px);
+        margin: 24px auto;
+    }
+
+    section {
+        padding: 22px 18px;
+        margin-bottom: 16px;
+        border-radius: 14px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+}
